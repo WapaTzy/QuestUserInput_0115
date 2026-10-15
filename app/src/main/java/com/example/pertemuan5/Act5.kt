@@ -38,7 +38,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
     // Variabel untuk menyimpan data yang dikirim/ditampilkan
     var nama by remember { mutableStateOf("") }
-    var jenis by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
 
     Column(
         modifier = modifier.padding(top = 50.dp),
