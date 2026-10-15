@@ -39,20 +39,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
     // Variabel untuk menyimpan data yang dikirim/ditampilkan
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
-
-    Column(
-        modifier = modifier.padding(top = 50.dp),
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        OutlinedTextField(
-            value = textNama,
-            singleLine = true,
-            shape = MaterialTheme.shapes.large,
-            modifier = Modifier.width(250.dp),
-            label = { Text(text = "Nama Lengkap") },
-            onValueChange = { textNama = it }
-        )
+    var jenis by remember { mutableStateOf("") }
 
         Row {
             gender.forEach { item ->
